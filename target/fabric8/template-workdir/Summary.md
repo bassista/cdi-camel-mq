@@ -1,1 +1,0 @@
-Camel route using CDI and ActiveMQ in a standalone Java Container
