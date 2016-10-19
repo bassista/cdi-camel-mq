@@ -30,7 +30,6 @@ import javax.inject.Inject;
 public class MyRoutes extends RouteBuilder {
 
     @Inject
-    @ServiceName("broker-amq-tcp")
     @Alias("jms")
     ActiveMQComponent activeMQComponent;
 
