@@ -17,7 +17,7 @@ package org.pfry;
 
 import io.fabric8.annotations.Alias;
 import io.fabric8.annotations.ServiceName;
-import org.apache.activemq.camel.component.ActiveMQComponent;
+//import org.apache.activemq.camel.component.ActiveMQComponent;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.cdi.ContextName;
 
@@ -29,9 +29,9 @@ import javax.inject.Inject;
 @ContextName("myCdiCamelContext")
 public class MyRoutes extends RouteBuilder {
 
-    @Inject
-    @Alias("jms")
-    ActiveMQComponent activeMQComponent;
+//    @Inject
+//    @Alias("jms")
+//    ActiveMQComponent activeMQComponent;
 
     @Override
     public void configure() throws Exception {
