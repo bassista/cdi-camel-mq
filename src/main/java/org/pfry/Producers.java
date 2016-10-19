@@ -1,6 +1,6 @@
 package org.pfry;
 
-import import org.apache.activemq.camel.component.ActiveMQComponent;
+import org.apache.activemq.camel.component.ActiveMQComponent;
 
 public class Produces {
  
