@@ -2,7 +2,7 @@ package org.pfry;
 
 import org.apache.activemq.camel.component.ActiveMQComponent;
 
-public class Produces {
+public class Producers {
  
     @Produces
     @Named("jms")
