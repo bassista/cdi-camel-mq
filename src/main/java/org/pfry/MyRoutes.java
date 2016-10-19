@@ -37,9 +37,9 @@ public class MyRoutes extends RouteBuilder {
     public void configure() throws Exception {
         from("timer://foo")
                 .setBody(constant("Everything is awesome!"))
-                .to("jms:queue:TEST.FOO");
+                .to("myjms:queue:TEST.FOO");
 
-        from("jms:queue:TEST.FOO")
+        from("myjms:queue:TEST.FOO")
                 .to("log:output");
     }
 }

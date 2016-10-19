@@ -9,7 +9,7 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 public class Producers {
  
     @Produces
-    @Named("jms")
+    @Named("myjms")
     @ApplicationScoped
     ActiveMQComponent getActiveMQComponent() {
         ActiveMQComponent component = new ActiveMQComponent();
