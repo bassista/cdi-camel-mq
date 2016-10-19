@@ -4,6 +4,7 @@ import org.apache.activemq.camel.component.ActiveMQComponent;
 import javax.enterprise.inject.*;
 import javax.enterprise.context.*;
 import javax.inject.*;
+import org.apache.activemq.ActiveMQConnectionFactory;
 
 public class Producers {
  
