@@ -19,7 +19,7 @@ import io.fabric8.annotations.Configuration;
 import io.fabric8.annotations.Factory;
 import io.fabric8.annotations.ServiceName;
 import org.apache.activemq.ActiveMQConnectionFactory;
-import javax.enterprise.inject;
+import javax.enterprise.inject.Default;
 public class ActiveMQConfigurer {
 
     @Factory
