@@ -19,10 +19,11 @@ import io.fabric8.annotations.Configuration;
 import io.fabric8.annotations.Factory;
 import io.fabric8.annotations.ServiceName;
 import org.apache.activemq.ActiveMQConnectionFactory;
-
+import javax.enterprise.inject;
 public class ActiveMQConfigurer {
 
     @Factory
+    @Default
     public ActiveMQConnectionFactory create( @Configuration ActiveMQConfig config) {
         ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("failover://ssl://broker-amq-demo.example.com:443");
         connectionFactory.setDispatchAsync(config.getDispatchAsync());
