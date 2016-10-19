@@ -25,7 +25,7 @@ public class ActiveMQConfigurer {
     @Factory
     @ServiceName
     public ActiveMQConnectionFactory create(@ServiceName String service, @Configuration ActiveMQConfig config) {
-        ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(service);
+        ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("failover://ssl://broker-amq-demo.example.com:443");
         connectionFactory.setDispatchAsync(config.getDispatchAsync());
         connectionFactory.setAlwaysSessionAsync(config.getAlwaysSessionAsync());
         connectionFactory.setAlwaysSyncSend(config.getAlwaysSyncSend());
